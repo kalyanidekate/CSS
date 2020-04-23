@@ -118,7 +118,6 @@ There is 3 ways to insert CSS:
     1. Inline
     2. Internal
     3. External
-    4. Multiple
     
 INLINE :
 Inline styling means style in a given tag i.e., <p>, <h>.
@@ -169,3 +168,29 @@ Syntax:- <!DOCTYPE html>
          <p>This is a paragraph.</p>
          </body>
          </html>
+
+
+COLOR :
+Colors are specified using a valid color name, or a RGB value, a HEX value, HSL, RGBA, HSLA values.
+ex.:- A valid color name= red,green, yellow, black, white, etc.
+      A RGB values= rgb(255,0,0) , rgb(0, 0, 255).
+      A HEX value= #ff0000, #0000ff, #3cb371, #ee82ee, #ffa500, #6a5acd
+      A HSL value= hsl(0, 100%, 50%), hsl(240, 100%, 50%), hsl(147, 50%, 47%), hsl(300, 76%, 72%), hsl(39, 100%, 50%), hsl(248, 53%, 58%)
+Syntax:- <!DOCTYPE html>
+         <html>
+         <body>
+         <h1 style="background-color:Blue;"> Hello World </h1>
+         <h1 style="background-color:rgb(0, 0, 255);"> Hello World </h1>
+         <h1 style="background-color:#ff0000;"> Hello World </h1>
+         <h1 style="background-color:hsl(0, 100%, 50%);"> Hello World </h1>
+         </body>
+         </html>
+         
+         
+COMMENT :
+Comments are use to explain the code and may help when you edit the source code  at a later date.
+Comments are ignor by browser.
+CSS comment start with "/*" and end with "*/".
+HTML comment is start with "<!----" and end with "----->".
+
+      
