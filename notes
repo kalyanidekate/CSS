@@ -194,3 +194,194 @@ CSS comment start with "/*" and end with "*/".
 HTML comment is start with "<!----" and end with "----->".
 
       
+CSS BACKGROUND : 
+We can use color or image as a background.
+The CSS background properties are used to define the background effects for elements.
+
+
+CSS FONT :
+In CSS, there are two types of font family names:
+      1. Generic family= a group of font families with a similar look (like "Serif" or "Monospace")
+      2. Font family - a specific font family (like "Times New Roman" or "Arial")
+
+FONT FAMILY :
+Font family of a text is set with the font-family property.
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         p.impact {font-family: Impact, Charcoal, sans-serif;
+         }
+         </style>
+         </head>
+         <body>
+         <h1>CSS font-family</h1>
+         <p class="impact"> This is a paragraph. </p>
+         </body>
+         </html>
+
+FONT STYLE :
+The font-style property is mostly used to specify italic text.
+There is three values:
+      1. Normal - The text is shown normally
+      2. Italic - The text is shown in italics
+      3. Oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
+ ex.:- <!DOCTYPE html>
+       <html>
+       <head>
+       <style>
+       p.normal {font-style: normal;
+       }
+       </style>
+       </head>
+       <body>
+       <p class="normal">This is a paragraph in normal style.</p>
+       </body>
+       </html>
+       
+FONT SIZE :
+Font-size property sets the size of the text.
+Use proper HTML tags, like <h1> - <h6> for headings and <p> for paragraphs.
+The font-size value can be an absolute, or relative size.
+Absolute size:
+Sets the text to a specified size.
+Does not allow a user to change the text size in all browsers (bad for accessibility reasons).
+Absolute size is useful when the physical size of the output is known.
+Relative size:
+Sets the size relative to surrounding elements.
+Allows a user to change the text size in browsers.
+
+
+CSS TEXT :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         h1 or p {
+         text-align:center| right| left;                            <!-----text is in center, right, left----->
+         text-transformation:uppercase| lowercase| capitalize;            <!-----text is in the uppercase, lowercase, capitalize----->
+         text-intend: -15px;
+         letter spacing: 3px;                                          <!-----spacing between the letters---->
+         line-height: 0.7;                                             <!-----distance between two lines or paragraph----->
+         word-spacing: 2px;                                             <!-----distance between two words----->
+         text-shadow: 3px 2px red;                                 <!----3px left, 2px right, red color of the shadow----->
+         </style>
+         </head>
+         <body>
+         <h1> This is heading. </h1>
+         <p> This is paragraph. </p>
+         </body>
+         </html>
+         
+         
+CSS IMAGE :
+Border is use for border of the image.
+Border-radius is use for changing the shape of the image.
+Box-shadow is used for shadow of the box.
+Max-width and height is used when the size of the window is increase or decrease the image should be set automatically according to the size of window.
+Opacity is used for blur the image and the value of the opacity is from 0 to 1.
+Syntax:- <html>                                                                                      ------.CSS file-----
+         <head>                                                                                      img{
+         <link rel="stylesheet" type="text/css"  href="css/cssimage.css" />                          width: 400px
+         </head>                                                                                     height: 400px;
+         <body>                                                                                      -moz-opacity: 0.6; 
+         <img src="image/a5.jpg" />                                                                  filter: alpha(opacity=50);
+         </body>                                                                                     border: 4px solid red;
+         </html>                                                                                     border-radius: 50px;
+                                                                                                     max-width: 100%;
+                                                                                                     height: auto
+                                                                                                     }
+                                                                                                     img: hover {
+                                                                                                     box-shadow: 0 0 12px 5px rgba
+                                                                                                     (0, 140, 186, 0.5)
+                                                                                                     }
+ 
+ 
+ CSS LINK :
+ a:link is used for color the link.
+ a:visited is used for changing the color of link when we visit the link.
+ a:hover is used for changing the color of the link when courser is on the link.
+ Syntax:- <html>                                                      ------.CSS file------
+          <head>                                                      a:link {
+          </head>                                                     color:blue;
+          <body>                                                      }
+          <a href="#"> Facebook </a>                                  a:visited {
+          </body>                                                     color:green;
+          </html>                                                     }
+                                                                      a:hover {
+                                                                      color: yellow:
+                                                                      }
+ 
+ 
+CSS LIST :
+There is 2 type of list:
+     1. unordered list (<ul>)= the list of item are mark with bullet.
+     2. ordered list (<ol>)= the list of item are mark with number or letter.
+<li> is used for listing.
+Style tag is used for styling internally or also you can create external css file and link them with html file.
+ul.a means unordered list of class a.
+List-style-type is used for pattern i.e., (upper-roman, lower-alpha, upper-alpha, square, circle, rectangle or none).
+Syntax:- <html>
+         <head>
+         <style>
+         ul.a {list-style-type:none| rectangle| square| circle;}
+         ol.b {list-style-type:upper-alpha| lower alpha| none;}
+         </style>
+         </head>
+         <body>
+         <ul class= "a">
+         <li> Delhi </li>
+         <li> Goa </li>
+         <li> Lucknow </li>
+         </ul>
+         <ol class="b">
+         <li> Delhi </li>
+         <li> Goa </li>
+         <li> Lucknow </li>
+         </ol>
+         </body>
+         </html>
+
+
+CSS TABLE :
+Table, th, td border is used for seperate border(double border) to ecah column and row.
+Border-collapse is used for the collapse the border(single line border).
+If th, td is removed from the style then the rows and column from the table is also removed.
+100% width automatically adjust the width according to screen size.
+Text_align is used for shifting the data.
+Padding is used for the spacing from the text-align given.
+Hover work when we move our curson on specific area the color is change.
+Even is used for changing the color of the even rows only.
+Odd is used for changing the color of the odd rows only.
+Syntax:- <html>
+         <head>
+         <style>
+         table, th, td{ border: 1px solid black| red| green;
+         boredr-collapse:collapse;}
+         table{width:100%; height:100px;}
+         th{text-align:right| left;}
+         td, th {padding: 15px; border-bottom: 1px;}
+         tr:hover {background-color:red;}
+         tr:nth-child(even | odd){background-color:#f2f2f2;}
+         </style>
+         </head>
+         <body>
+         <div>
+         <table>
+         <tr>
+         <th> First name</th>
+         <th> Last name</th>
+         </tr>
+         <tr>
+         <th> Rana</th>
+         <th> Singh </th>
+         </tr>
+         <tr>
+         <th> Kalyani </th>
+         <th> Dekate </th>
+         </tr>
+         </table>
+         </div>
+         </body>
+         </html>
+         
