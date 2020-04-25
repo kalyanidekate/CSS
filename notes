@@ -373,7 +373,7 @@ Syntax:- <html>
          <th> Last name</th>
          </tr>
          <tr>
-         <th> Rana</th>
+         <th> Rana </th>
          <th> Singh </th>
          </tr>
          <tr>
@@ -385,3 +385,664 @@ Syntax:- <html>
          </body>
          </html>
          
+
+CSS LAYOUT :
+Width property doesn't shrink or extends its size.
+Max-width property shrink or extends accrding to browser window size.
+Div tag is used for defining a section of your document. With the div tag, you can group large sections of HTML elements together and format them with CSS.
+
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         div.ex1 or .ex1{
+         width:500px;
+         margin:auto;
+         border:3px solid red;
+         }
+         div.ex2 or .ex2{
+         max-width:500px;
+         margin:auto;
+         border:3px solid red;
+         }
+         </style>
+         </head>
+         <body>
+         <div class="ex1">
+         This is div tag paragraph.
+         </div><br>
+         <div class="ex2">
+         This is div tag paragraph.
+         </div>
+         </body>
+         </html>
+
+
+CSS POSITION :
+There are 4 different position values:
+       1. Static(default)
+       2. Relative
+       3. Fixed
+       4. Absolute
+       5. Sticky
+<!---comment----> is the format for comment in HTML.
+
+STATIC:
+It is by default.
+Syntax:- <html>
+         <head>
+         <style>
+         div.static{
+         position:static;
+         border:3px solid black;
+         }
+         </style>
+         </head>
+         <body>
+         <div class="static">
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         Hover work when we move our curson on specific area the color is change.
+         Even is used for changing the color of the even rows only.
+         Odd is used for changing the color of the odd rows only.
+         </p>
+         </div>
+         </body>
+         </html>
+         
+RELATIVE :
+In relative value margin property will work.
+you can give a margin, border from left and right side.
+Syntax:- <html>
+         <head>
+         <style>
+         div.relative{
+         position:relative;
+         left:300px;
+         border:3px solid black;
+         }
+         </style>
+         </head>
+         <body>
+         <div class="relative">
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         Hover work when we move our curson on specific area the color is change.
+         Even is used for changing the color of the even rows only.
+         Odd is used for changing the color of the odd rows only.
+         </p>
+         </div>
+         </body>
+         </html>
+         
+FIXED :
+Syntax:- <html>
+         <head>
+         <style>
+         div.fixed{
+         position:fixed;
+         left:30px;
+         border:3px solid black;
+         }
+         </style>
+         </head>
+         <body>
+         <div class="fixed">
+         <p>
+         100% width automatically adjust the width according to screen size.
+         </p>
+         </div>
+          <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         Hover work when we move our curson on specific area the color is change.
+         Even is used for changing the color of the even rows only.
+         Odd is used for changing the color of the odd rows only.
+         </p>
+         </body>
+         </html>
+         
+ABSOLUTE :
+Syntax:- <html>
+         <head>
+         <style>
+         div.relative{
+         position:relative;
+         width:400px;
+         height:200px;
+         border:3px solid red;
+         }
+         div.absolute{
+         position:absolute;
+         top:80px;
+         right:0px;
+         width:200px;
+         height:100px;
+         boredr:3px solid black;
+         }
+         </style>
+         </head>
+         <body>
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         Hover work when we move our curson on specific area the color is change.
+         Even is used for changing the color of the even rows only.
+         Odd is used for changing the color of the odd rows only.
+         </p>
+         <div class= "relative"> This div element has position:relative </div>
+          <div class= "relative"> This div element has position:absolute </div>
+         </body>
+         </html>
+         
+STICKY :
+Set the value of position as sticky.
+Syntax:- <html>
+         <head>
+         <style>
+         div.sticky{
+         position:-webkit-sticky;
+         position:sticky;
+         top:0;
+         padding:5px;
+         background-color:yellow;
+         border:3px solid green;
+         }
+         </style>
+         </head>
+         <body>
+         <div class="sticky">
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         Hover work when we move our curson on specific area the color is change.
+         Even is used for changing the color of the even rows only.
+         Odd is used for changing the color of the odd rows only.
+         </p>
+         </div>
+         <div style= "padding-bottom:2000px"> This div element has position.
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         </p>
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         </p>
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         </p>
+         </div>
+         </body>
+         </html>
+         
+         
+CSS OVERFLOW :
+It depend on height. According to height it get visible, scroll, auto or hidden.
+In scroll both side scrolling bar are available and in auto o ly one side scrolling bar are available.
+The overflow property has following values:
+     1. visible(default)
+     2. hidden
+     3. scroll
+     4. auto
+Syntax:- <html>
+         <head>
+         <style>
+         .overflow{
+         width:300px;
+         height:50px;
+         background-color:#5e6060;
+         overflow:visible| hidden| scroll| auto;
+         margin-left:30px;}
+         </style>
+         <link href="css/techtalktricks.css" rel="stylesheet" type="text/css"/>
+         </head>
+         <body>
+         <p class="channelName"> Tach Talk Trick </p>
+         <hr width="40%" color="yellow">
+         <p class="para"> Free educational video on youtube </p>
+         <div class="WorkArea">
+         <!-----from here we can start work...----->
+         <div class="overflow">
+         <p> my name is kalyani </p>
+         </div>
+         </div>
+         </body>
+         </html>
+
+
+CSS MARGIN :
+Font size is used for text size.
+Margin is used for space from the starting point and it can be given from left, right, top, bottom.
+Syntax:- <html>
+         <head>
+         <style>
+         h1{color:blue; font-family:verdana; margin-left:550px;}
+         h3{color:green; font-family:aerial; margin-left:550px;}
+         p{font-size:30px; margin-left|right|top|bottom: 200px;}           <!----u can use margin like, margin:200px 100px 200px 400px; i.e., left right top bottom---->
+         </style>
+         </head>
+         <body>
+         <h1> My name is kalyani. </h1>
+         <hr width=" 40% " color="red" />
+         <h3> I am 23 years old. </h3>
+         <hr width="100%" color="black">
+         <p> This is paragraph 1.</p>
+         <p> This is paragraph 2.</p>
+         </body>
+         </html>
+
+
+CSS AUDIO :
+src is used for source.
+Syntax:- <html>
+         <head>
+         <style>
+         h1{color:blue; font-family:verdana; margin-left:550px;}
+         h3{color:green; font-family:aerial; margin-left:550px;}
+         p{font-size:30px; margin-left|right|top|bottom: 200px;}           <!----u can use margin like, margin:200px 100px 200px 400px; i.e., left right top bottom---->
+         audio{margin-left:420px;}
+         </style>
+         </head>
+         <body>
+         <h1> My name is kalyani. </h1>
+         <hr width=" 40% " color="red" />
+         <h3> I am 23 years old. </h3>
+         <hr width="100%" color="black">
+         <p> Play music here.</p>
+         <audio src="music/mitti.mp3" controls> your browser not supprt audio.</audio>
+         </body>
+         </html>
+    
+ 
+CSS OPACITY :
+Opacity is used for blur the image.
+The value of opacity is from 0 to 1.
+Img:hover is used for when courser is on the image the image get blur.
+Syntax:- <html>
+          <head>
+          <style>
+          img{
+          opacity:0.5;
+          }
+          img:hover{
+          opacity:1.0;
+          }
+          </style>
+          </head>
+          <body>
+          <img src="C:\Users\Kalyani\Pictures\giphy.gif" width="200px" height="200px">
+          </body>
+          </html>
+          
+          
+INLINE BLOCK :
+Inline block is used in the display property.
+Syntax:- <html>
+         <head>
+         <style>
+         .inline_block{
+         width: 150px;
+         height:75px;
+         margin:10px;
+         border:3px solid red;
+         display:inline-block;
+         }
+         </style>
+         </head>
+         <body>
+         <p class="inline_block"> Computing and the way people use C for doing it keeps changing as years go by. So overwhelming has been the response to all the previous editions of “Let Us C” that I have now decided that each year I would come up with a new edition of it so that I can keep the readers abreast with the way C is being used at that point in time.  </p>
+         </body>
+         </html>
+
+
+FLOAT :
+It is used for shifting the text at right or the left side of the page.
+There is two value of float
+   1. right
+   2. left 
+Clear is used when we used the new paragraph, the paragraph is followed the old instruction of the float(right left).therefore theclear value is used for new paragraph.
+Syntax:- <html>
+         <head>
+         <style>
+         .float{
+         width:200px;
+         height:100px;
+         float:left|right|clear;
+         }
+         </style>
+         </head>
+         <body>
+         <p class="float">Computing and the way people use C for doing it keeps changing as years go by. So overwhelming has been the response to all the previous editions of “Let Us C” that I have now decided that each year I would come up with a new edition of it so that I can keep the readers abreast with the way C is being used at that point in time. </p>
+         </body>
+         </html>
+         
+         
+CURSOR :
+Values of cursor:
+    1. Crosshair
+    2. Default
+    3. Move
+    4. Wait
+    5. Help
+    6. E-resize                  <!-----noth south east west----->
+       NE, SW resize
+Syntax:- <html>
+         <head>
+         <style></style>
+         </head>
+         <body>
+         <p> move cursor to see the effect </p>
+         <div style="cursor:crosshair ">crosshair</div>
+         </body>
+         </html>
+         
+         
+OUTLINE :    
+Border or margin.
+Values of outline:
+     1. thin
+     2. thick
+Syntax:- <html>
+         <head>
+         <style>
+         </style>
+         </head>
+         <body>
+         <p style="outline-width:thin| thick; outline-style:solid;"> check outline property. </p>
+         <p style="outline-width:thick; outline-style:dotted; outline-color:red;"> check outline property here. </p>
+         </body>
+         </html>
+         
+
+Z-INDEX PROPERTY :
+Syntax:- <html>
+         <head>
+         <style>
+         body{font-family:verdana; margin:0;}
+         div#main{margin:0; auto;}
+         .common{width:200px; height:200px; color:#fff; border:1px solid #333; position:absolute;}
+         .one{background-color:red; z-index:0; left:20; top:40px;}
+         .two{background-color:yellow; z-index:1;left:40; top:80px}
+         .three{background-color:green; z-index:2;left:60; top:120px}
+         .four{background-color:orange; z-index:3;left:80; top:160px}
+         .five{background-color:blue; z-index:4;left:100; top:200px}
+         .six{background-color:gray; z-index:5;left:120; top:240px}
+         .seven{background-color:black; z-index:6;left:140; top:280px}
+         </style>
+         </head>
+         <body>
+         <div id="main">
+         <div class="common one"> div#1 </div>
+         <div class="common two"> div#2 </div>
+         <div class="common three"> div#3 </div>
+         <div class="common four"> div#4 </div>
+         <div class="common five"> div#5 </div>
+         <div class="common six"> div#6 </div>
+         <div class="common seven"> div#7 </div>
+         </div>
+         </body>
+         </html>
+
+
+CSS PADDING :
+Spacing from top, bottom, right, left.
+Syntax:- <html>
+         <head>
+         <style>
+         p{ border-bottom:5px solid blue;
+         width:300px;
+         background-color:lightgrey;                      
+         padding-top:100px;                              padding: 50px 25px 100px 40px;                       
+         padding-bottom:100px;             OR            1st is for top, 2nd for right,  
+         padding-right:100px;                            3rd for bottom and 4rth for left.
+         padding-left:100px;
+         }
+         </style>
+         <head>
+         </head>
+         <body>
+         <p> My name is kalyani. </p>
+         </body>
+         </html>
+
+
+CSS BORDER :
+It is used for border the page. IT gives the different different border to the four side of the page.
+Border-style is used for border the text. The values of border-style is dotted, solid, hidden and etc.
+You can add all values of border-style at a time.
+Width is used for border width.
+Syntax:- <html>
+         <head>
+         <style>
+         p{border-style:dotted| solid;                           p{border-top-style:dotted;}
+         border-width:5px;                         OR                     bottom
+         width:300px;                                                 
+         border-color:red;
+         }
+         </style>
+         </head>
+         <body>
+         <p> My name is kalyani. </p>
+         </body>
+         </html>
+ 
+ 
+CSS ICONS :
+
+CSS DISPLAY PROPERTY :
+It is used when content should be show or hide according to requirement.
+Display is used for data which is shown on the display.
+Values of display:
+    1. none
+    2. inline
+    3. block
+    4. inline-block
+Syntax:- <html>
+         <head>
+         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+         <style>
+         p.p1{border-bottom:5px solid blue;
+         width:300px;
+         height:100px;
+         background-color:lightgrey;
+         display:none;
+         }
+         p.p2{display:inline;}
+         p.p3{display:block;}
+         p.p4{display:inline-block;}
+         </style>
+         </head>
+         <body>
+         <div>
+         <p class="p1"> My name is kalyani. </p>
+         </div>
+          <div>
+         <p class="p2"> My name is kalyani. </p>
+         </div>
+          <div>
+         <p class="p3"> My name is kalyani. </p>
+         </div>
+          <div>
+         <p class="p4"> My name is kalyani. </p>
+         </div>
+         </body>
+         </html>
+         
+     
+CSS ALIGN :
+Values of text-align:
+      1. right
+      2. left
+      3. center
+Syntax:- <html>
+          <head>
+          <style>
+          .centerAlign{
+          margin:auto;
+          width:60%;
+          border:3px solid blue;
+          padding: 10px;
+          text-align:center;
+          }
+          </style>
+          </head>
+          <body>
+          <div class="centerAlign">
+          <p> My name is kalyani. </p>
+          </div>
+          </body>
+          </html>
+ 
+ 
+CSS COMBINATORS :
+If you used multiple paragraph in div then div tag is a parent element and in div all are child element.
+Target values is _blank, self and etc.
+CSS ATTRIBUTE SELECTOR :
+Syntax:- <html>
+          <head>
+          <style>
+          a[target="self| _blank"]{background-color:yellow;       
+          }
+          </style>
+          </head>
+          <body>
+          <a target="_blank" href="https://www.google.com"> google </a>
+          <a target="self" href="https://www.google.com> google </a>
+          </body>
+          </html>
+          
+          
+CSS FORMS :
+Password type is used when text enter into the box it shown in dotted form.
+Border radius is used for the round the corners.
+Syntax:- <html>
+         <head>
+         <style>
+         input{type=text]{width:30%;
+         padding:12px 20px;                                                  border:2px solid red;
+         box-sizing:border-box;                                              border-radius:40px;
+         border:none;                                                     or top or right or left.
+         border-bottom:2px solid red;
+         background-color:blue;
+         color:white;
+         }
+         input[type=text]: focus {background-color:lightblue; border:3px solid green;}
+         </style>
+         </head>
+         <body>
+         <label for="fname"> First Name </label>
+         <input type="text| password" id="fname" name="fname" />
+         </body>
+         </html>
+         
+         
+CSS COUNTERS :
+Conter is consider as a variable like programing language.
+Syntax:- <html>
+         <head>
+         <style>
+         body{counter-reset:section;}
+         p::before{
+         counter-increment:section;
+         content:"section" counter(section) ":";
+         }
+         </style>
+         </head>
+         <body>
+         <p> HTML tutorial </p>
+         <p> CSS tutorial </p>
+         <p> C++ tutorial </p>
+         <p> MySQL tutorial </p>
+         </body>
+         </html>
+
+
+ANIMATION PROPERTY :
+Syntax:- <html>
+         <head>
+         <style>
+         div{
+         width:100px;
+         height:100px;
+         background-color:blue;
+         position:relative;
+         animation:mymove 5s infinite;
+         }
+         @keyframes mymove
+         {
+         from{left:0px;}
+         to{left:200px;}
+         }
+         </style>
+         </head>
+         <body>
+         <div></div>
+         </body>
+         </html>
+         
+         
+ANIMATION DELAY :
+Syntax:- <html>
+         <head>
+         <style>
+         div{
+         width:100px;
+         height:100px;
+         background-color:blue;
+         position:relative;
+         -webkit-animation:mymove 5s infinite;
+         -webkit-animation-delay: 3s ;
+         animation:mymove 5s infinite;
+         animation-delay:3s;
+         }
+         @keyframes mymove
+         {
+         from{left:0px;}
+         to{left:200px;}
+         }
+         </style>
+         </head>
+         <body>
+         <div></div>
+         </body>
+         </html>
+     
+
+ANIMATION DIRECTION :
+Syntax:- <html>
+         <head>
+         <style>
+         div{
+         width:100px;
+         height:100px;
+         background-color:blue;
+         position:relative;
+         -webkit-animation:mymove 5s infinite;
+         -webkit-animation-direction: alternate ;
+         animation:mymove 5s infinite;
+         animation-direction:alternate;
+         }
+         @keyframes mymove
+         {
+         from{left:0px;}
+         to{left:200px;}
+         }
+         </style>
+         </head>
+         <body>
+         <div></div>
+         </body>
+         </html>
+     
