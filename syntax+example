@@ -1,1 +1,882 @@
+SELECTOR :
+Syntax:- h1{color:red; font-size:15px;}
+   <!----h1= selector & color:red; font-size:15px; =declaration----->
+   <!----color and font-size= property & red and 15px= values---->
+   
+ELEMENT SELECTOR :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         p {
+         text-align: center;                <!----this p{   } portion is of element selector----->
+         color: green;
+         } 
+         </style>
+         </head>
+         <body>
+         <p>This is paragraph.</p>
+         <p id="para1">Me too!</p>
+         </body>
+         </html>
+ 
+ID SELECTOR : 
+Syntax:- <!DOCTYPE html>
+         <html> 
+         <head>
+         <style>
+         #para1 { text-align: center;
+         color: yellow;
+         }
+         </style>
+         </head>
+         <body>
+         <p id="para1">Hello World!</p>
+         <p>This paragraph is not affected by the style.</p>
+         </body>
+         </html>
+
+CLASS SELECTOR :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         .para2 {text-align: center;
+         color: red;
+         }
+         </style>
+         </head>
+         <body>
+         <h1 class="para2"> This is heading. </h1>
+         <p class="para2"> This is paragraph.</p> 
+         </body>
+         </html>
+
+GROUP SELECTOR :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         h1, h2, p {
+         text-align: center;
+         color: red;
+         }
+         </style>
+         </head>
+         <body>
+         <h1>Hello World!</h1>
+         <h2>Smaller heading!</h2>
+         <p>This is a paragraph.</p>
+         </body>
+         </html>
+
+
+UNIVERSAL SELECTOR :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         * {text-align: center;
+         color: blue;
+         }
+         </style>
+         </head>
+         <body>
+         <h1>Hello world!</h1>
+         <p>Every element on the page will be affected by the style.</p>
+         <p id="para1">Me too!</p>
+         <p>And me!</p>
+         </body>
+         </html>
+
+
+INSERT CSS :
+1. INLINE :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <body>
+         <h1 style="color:green; text-align:center;"> This is a heading </h1>
+         <p style="color:blue;"> This is a paragraph. </p>
+         </body>
+         </html>
+         
+2. INTERNAL :
+Syntax:- <!DOCTYPE html>                                                <!DOCTYPE html> 
+         <html>                                                         <html>
+         <head>                                                         <head>
+         <style>                                                        <style>
+         body {background-color: linen;                                 #para1 {{background-color: linen;
+         }                                                              }
+         h1 {                                                           .para2{
+         color: maroon;                                                 color: maroon;
+         margin-left: 40px;                                             margin-left: 40px;
+         }                                                              }
+         </style>                                                       </style>  
+         </head>                                                        </head>
+         <body>                                                         <body>
+         <h1>This is a heading</h1>                                     <h1 id="para1">This is a heading</h1>
+         <p>This is a paragraph.</p>                                    <p class="para2">This is a paragraph.</p>
+         </body>                                                        </body>
+         </html>                                                        </html>
+ 
+3. EXTERNAL :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <link rel="stylesheet" type="text/css" href="mystyle.css">
+         </head>
+         <body>
+         <h1>This is a heading</h1>
+         <p>This is a paragraph.</p>
+         </body>
+         </html>
+
+
+COLOR :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <body>
+         <h1 style="background-color:Blue;"> Hello World </h1>
+         <h1 style="background-color:rgb(0, 0, 255);"> Hello World </h1>
+         <h1 style="background-color:#ff0000;"> Hello World </h1>
+         <h1 style="background-color:hsl(0, 100%, 50%);"> Hello World </h1>
+         </body>
+         </html>
+         
+         
+COMMENT :
+CSS comment start with "/*" and end with "*/".
+HTML comment is start with "<!----" and end with "----->".
+
+
+FONT FAMILY :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         p.impact {font-family: Impact, Charcoal, sans-serif;
+         }
+         </style>
+         </head>
+         <body>
+         <h1>CSS font-family</h1>
+         <p class="impact"> This is a paragraph. </p>
+         </body>
+         </html>
+
+FONT STYLE :
+ex.:- <!DOCTYPE html>
+       <html>
+       <head>
+       <style>
+       p.normal {font-style: normal;
+       }
+       </style>
+       </head>
+       <body>
+       <p class="normal">This is a paragraph in normal style.</p>
+       </body>
+       </html>
+       
+
+CSS TEXT :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         h1 or p {
+         text-align:center| right| left;                            <!-----text is in center, right, left----->
+         text-transformation:uppercase| lowercase| capitalize;            <!-----text is in the uppercase, lowercase, capitalize----->
+         text-intend: -15px;
+         letter spacing: 3px;                                          <!-----spacing between the letters---->
+         line-height: 0.7;                                             <!-----distance between two lines or paragraph----->
+         word-spacing: 2px;                                             <!-----distance between two words----->
+         text-shadow: 3px 2px red;                                 <!----3px left, 2px right, red color of the shadow----->
+         </style>
+         </head>
+         <body>
+         <h1> This is heading. </h1>
+         <p> This is paragraph. </p>
+         </body>
+         </html>
+         
+         
+CSS IMAGE :
+Syntax:- <html>                                                                                      ------.CSS file-----
+         <head>                                                                                      img{
+         <link rel="stylesheet" type="text/css"  href="css/cssimage.css" />                          width: 400px
+         </head>                                                                                     height: 400px;
+         <body>                                                                                      -moz-opacity: 0.6; 
+         <img src="image/a5.jpg" />                                                                  filter: alpha(opacity=50);
+         </body>                                                                                     border: 4px solid red;
+         </html>                                                                                     border-radius: 50px;
+                                                                                                     max-width: 100%;
+                                                                                                     height: auto
+                                                                                                     }
+                                                                                                     img: hover {
+                                                                                                     box-shadow: 0 0 12px 5px rgba
+                                                                                                     (0, 140, 186, 0.5)
+                                                                                                     }
+ 
+ 
+ CSS LINK :
+ Syntax:- <html>                                                      ------.CSS file------
+          <head>                                                      a:link {
+          </head>                                                     color:blue;
+          <body>                                                      }
+          <a href="#"> Facebook </a>                                  a:visited {
+          </body>                                                     color:green;
+          </html>                                                     }
+                                                                      a:hover {
+                                                                      color: yellow:
+                                                                      }
+ 
+ 
+CSS LIST :
+Syntax:- <html>
+         <head>
+         <style>
+         ul.a {list-style-type:none| rectangle| square| circle;}
+         ol.b {list-style-type:upper-alpha| lower alpha| none;}
+         </style>
+         </head>
+         <body>
+         <ul class= "a">
+         <li> Delhi </li>
+         <li> Goa </li>
+         <li> Lucknow </li>
+         </ul>
+         <ol class="b">
+         <li> Delhi </li>
+         <li> Goa </li>
+         <li> Lucknow </li>
+         </ol>
+         </body>
+         </html>
+
+
+CSS TABLE :
+Syntax:- <html>
+         <head>
+         <style>
+         table, th, td{ border: 1px solid black| red| green;
+         boredr-collapse:collapse;}
+         table{width:100%; height:100px;}
+         th{text-align:right| left;}
+         td, th {padding: 15px; border-bottom: 1px;}
+         tr:hover {background-color:red;}
+         tr:nth-child(even | odd){background-color:#f2f2f2;}
+         </style>
+         </head>
+         <body>
+         <div>
+         <table>
+         <tr>
+         <th> First name</th>
+         <th> Last name</th>
+         </tr>
+         <tr>
+         <th> Rana </th>
+         <th> Singh </th>
+         </tr>
+         <tr>
+         <th> Kalyani </th>
+         <th> Dekate </th>
+         </tr>
+         </table>
+         </div>
+         </body>
+         </html>
+         
+
+CSS LAYOUT :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         div.ex1 or .ex1{
+         width:500px;
+         margin:auto;
+         border:3px solid red;
+         }
+         div.ex2 or .ex2{
+         max-width:500px;
+         margin:auto;
+         border:3px solid red;
+         }
+         </style>
+         </head>
+         <body>
+         <div class="ex1">
+         This is div tag paragraph.
+         </div><br>
+         <div class="ex2">
+         This is div tag paragraph.
+         </div>
+         </body>
+         </html>
+
+
+CSS POSITION :
+1. STATIC:
+Syntax:- <html>
+         <head>
+         <style>
+         div.static{
+         position:static;
+         border:3px solid black;
+         }
+         </style>
+         </head>
+         <body>
+         <div class="static">
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         Hover work when we move our curson on specific area the color is change.
+         Even is used for changing the color of the even rows only.
+         Odd is used for changing the color of the odd rows only.
+         </p>
+         </div>
+         </body>
+         </html>
+         
+2. RELATIVE :
+Syntax:- <html>
+         <head>
+         <style>
+         div.relative{
+         position:relative;
+         left:300px;
+         border:3px solid black;
+         }
+         </style>
+         </head>
+         <body>
+         <div class="relative">
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         Hover work when we move our curson on specific area the color is change.
+         Even is used for changing the color of the even rows only.
+         Odd is used for changing the color of the odd rows only.
+         </p>
+         </div>
+         </body>
+         </html>
+         
+3.FIXED :
+Syntax:- <html>
+         <head>
+         <style>
+         div.fixed{
+         position:fixed;
+         left:30px;
+         border:3px solid black;
+         }
+         </style>
+         </head>
+         <body>
+         <div class="fixed">
+         <p>
+         100% width automatically adjust the width according to screen size.
+         </p>
+         </div>
+          <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         Hover work when we move our curson on specific area the color is change.
+         Even is used for changing the color of the even rows only.
+         Odd is used for changing the color of the odd rows only.
+         </p>
+         </body>
+         </html>
+         
+4. ABSOLUTE :
+Syntax:- <html>
+         <head>
+         <style>
+         div.relative{
+         position:relative;
+         width:400px;
+         height:200px;
+         border:3px solid red;
+         }
+         div.absolute{
+         position:absolute;
+         top:80px;
+         right:0px;
+         width:200px;
+         height:100px;
+         boredr:3px solid black;
+         }
+         </style>
+         </head>
+         <body>
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         Hover work when we move our curson on specific area the color is change.
+         Even is used for changing the color of the even rows only.
+         Odd is used for changing the color of the odd rows only.
+         </p>
+         <div class= "relative"> This div element has position:relative </div>
+          <div class= "relative"> This div element has position:absolute </div>
+         </body>
+         </html>
+         
+5. STICKY :
+Set the value of position as sticky.
+Syntax:- <html>
+         <head>
+         <style>
+         div.sticky{
+         position:-webkit-sticky;
+         position:sticky;
+         top:0;
+         padding:5px;
+         background-color:yellow;
+         border:3px solid green;
+         }
+         </style>
+         </head>
+         <body>
+         <div class="sticky">
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         Hover work when we move our curson on specific area the color is change.
+         Even is used for changing the color of the even rows only.
+         Odd is used for changing the color of the odd rows only.
+         </p>
+         </div>
+         <div style= "padding-bottom:2000px"> This div element has position.
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         </p>
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         </p>
+         <p>
+         100% width automatically adjust the width according to screen size.
+         Text_align is used for shifting the data.
+         Padding is used for the spacing from the text-align given.
+         </p>
+         </div>
+         </body>
+         </html>
+         
+         
+CSS OVERFLOW :
+Syntax:- <html>
+         <head>
+         <style>
+         .overflow{
+         width:300px;
+         height:50px;
+         background-color:#5e6060;
+         overflow:visible| hidden| scroll| auto;
+         margin-left:30px;}
+         </style>
+         <link href="css/techtalktricks.css" rel="stylesheet" type="text/css"/>
+         </head>
+         <body>
+         <p class="channelName"> Tach Talk Trick </p>
+         <hr width="40%" color="yellow">
+         <p class="para"> Free educational video on youtube </p>
+         <div class="WorkArea">
+         <!-----from here we can start work...----->
+         <div class="overflow">
+         <p> my name is kalyani </p>
+         </div>
+         </div>
+         </body>
+         </html>
+
+
+CSS MARGIN :
+Syntax:- <html>
+         <head>
+         <style>
+         h1{color:blue; font-family:verdana; margin-left:550px;}
+         h3{color:green; font-family:aerial; margin-left:550px;}
+         p{font-size:30px; margin-left|right|top|bottom: 200px;}           <!----u can use margin like, margin:200px 100px 200px 400px; i.e., left right top bottom---->
+         </style>
+         </head>
+         <body>
+         <h1> My name is kalyani. </h1>
+         <hr width=" 40% " color="red" />
+         <h3> I am 23 years old. </h3>
+         <hr width="100%" color="black">
+         <p> This is paragraph 1.</p>
+         <p> This is paragraph 2.</p>
+         </body>
+         </html>
+
+
+CSS AUDIO :
+Syntax:- <html>
+         <head>
+         <style>
+         h1{color:blue; font-family:verdana; margin-left:550px;}
+         h3{color:green; font-family:aerial; margin-left:550px;}
+         p{font-size:30px; margin-left|right|top|bottom: 200px;}           <!----u can use margin like, margin:200px 100px 200px 400px; i.e., left right top bottom---->
+         audio{margin-left:420px;}
+         </style>
+         </head>
+         <body>
+         <h1> My name is kalyani. </h1>
+         <hr width=" 40% " color="red" />
+         <h3> I am 23 years old. </h3>
+         <hr width="100%" color="black">
+         <p> Play music here.</p>
+         <audio src="music/mitti.mp3" controls> your browser not supprt audio.</audio>
+         </body>
+         </html>
+    
+ 
+CSS OPACITY :
+Syntax:- <html>
+          <head>
+          <style>
+          img{
+          opacity:0.5;
+          }
+          img:hover{
+          opacity:1.0;
+          }
+          </style>
+          </head>
+          <body>
+          <img src="C:\Users\Kalyani\Pictures\giphy.gif" width="200px" height="200px">
+          </body>
+          </html>
+          
+          
+INLINE BLOCK :
+Syntax:- <html>
+         <head>
+         <style>
+         .inline_block{
+         width: 150px;
+         height:75px;
+         margin:10px;
+         border:3px solid red;
+         display:inline-block;
+         }
+         </style>
+         </head>
+         <body>
+         <p class="inline_block"> Computing and the way people use C for doing it keeps changing as years go by. So overwhelming has been the response to all the previous editions of “Let Us C” that I have now decided that each year I would come up with a new edition of it so that I can keep the readers abreast with the way C is being used at that point in time.  </p>
+         </body>
+         </html>
+
+
+FLOAT :
+Syntax:- <html>
+         <head>
+         <style>
+         .float{
+         width:200px;
+         height:100px;
+         float:left|right|clear;
+         }
+         </style>
+         </head>
+         <body>
+         <p class="float">Computing and the way people use C for doing it keeps changing as years go by. So overwhelming has been the response to all the previous editions of “Let Us C” that I have now decided that each year I would come up with a new edition of it so that I can keep the readers abreast with the way C is being used at that point in time. </p>
+         </body>
+         </html>
+         
+         
+CURSOR :
+Syntax:- <html>
+         <head>
+         <style></style>
+         </head>
+         <body>
+         <p> move cursor to see the effect </p>
+         <div style="cursor:crosshair ">crosshair</div>
+         </body>
+         </html>
+         
+         
+OUTLINE :   
+Syntax:- <html>
+         <head>
+         <style>
+         </style>
+         </head>
+         <body>
+         <p style="outline-width:thin| thick; outline-style:solid;"> check outline property. </p>
+         <p style="outline-width:thick; outline-style:dotted; outline-color:red;"> check outline property here. </p>
+         </body>
+         </html>
+         
+
+Z-INDEX PROPERTY :
+Syntax:- <html>
+         <head>
+         <style>
+         body{font-family:verdana; margin:0;}
+         div#main{margin:0; auto;}
+         .common{width:200px; height:200px; color:#fff; border:1px solid #333; position:absolute;}
+         .one{background-color:red; z-index:0; left:20; top:40px;}
+         .two{background-color:yellow; z-index:1;left:40; top:80px}
+         .three{background-color:green; z-index:2;left:60; top:120px}
+         .four{background-color:orange; z-index:3;left:80; top:160px}
+         .five{background-color:blue; z-index:4;left:100; top:200px}
+         .six{background-color:gray; z-index:5;left:120; top:240px}
+         .seven{background-color:black; z-index:6;left:140; top:280px}
+         </style>
+         </head>
+         <body>
+         <div id="main">
+         <div class="common one"> div#1 </div>
+         <div class="common two"> div#2 </div>
+         <div class="common three"> div#3 </div>
+         <div class="common four"> div#4 </div>
+         <div class="common five"> div#5 </div>
+         <div class="common six"> div#6 </div>
+         <div class="common seven"> div#7 </div>
+         </div>
+         </body>
+         </html>
+
+
+CSS PADDING :
+Syntax:- <html>
+         <head>
+         <style>
+         p{ border-bottom:5px solid blue;
+         width:300px;
+         background-color:lightgrey;                      
+         padding-top:100px;                              padding: 50px 25px 100px 40px;                       
+         padding-bottom:100px;             OR            1st is for top, 2nd for right,  
+         padding-right:100px;                            3rd for bottom and 4rth for left.
+         padding-left:100px;
+         }
+         </style>
+         <head>
+         </head>
+         <body>
+         <p> My name is kalyani. </p>
+         </body>
+         </html>
+
+
+CSS BORDER :
+Syntax:- <html>
+         <head>
+         <style>
+         p{border-style:dotted| solid;                           p{border-top-style:dotted;}
+         border-width:5px;                         OR                     bottom
+         width:300px;                                                 
+         border-color:red;
+         }
+         </style>
+         </head>
+         <body>
+         <p> My name is kalyani. </p>
+         </body>
+         </html>
+ 
+ 
+CSS DISPLAY PROPERTY :
+Syntax:- <html>
+         <head>
+         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+         <style>
+         p.p1{border-bottom:5px solid blue;
+         width:300px;
+         height:100px;
+         background-color:lightgrey;
+         display:none;
+         }
+         p.p2{display:inline;}
+         p.p3{display:block;}
+         p.p4{display:inline-block;}
+         </style>
+         </head>
+         <body>
+         <div>
+         <p class="p1"> My name is kalyani. </p>
+         </div>
+          <div>
+         <p class="p2"> My name is kalyani. </p>
+         </div>
+          <div>
+         <p class="p3"> My name is kalyani. </p>
+         </div>
+          <div>
+         <p class="p4"> My name is kalyani. </p>
+         </div>
+         </body>
+         </html>
+         
+     
+CSS ALIGN :
+Syntax:- <html>
+          <head>
+          <style>
+          .centerAlign{
+          margin:auto;
+          width:60%;
+          border:3px solid blue;
+          padding: 10px;
+          text-align:center;
+          }
+          </style>
+          </head>
+          <body>
+          <div class="centerAlign">
+          <p> My name is kalyani. </p>
+          </div>
+          </body>
+          </html>
+ 
+ 
+CSS COMBINATORS :
+Syntax:- <html>
+          <head>
+          <style>
+          a[target="self| _blank"]{background-color:yellow;       
+          }
+          </style>
+          </head>
+          <body>
+          <a target="_blank" href="https://www.google.com"> google </a>
+          <a target="self" href="https://www.google.com> google </a>
+          </body>
+          </html>
+          
+          
+CSS FORMS :
+Syntax:- <html>
+         <head>
+         <style>
+         input{type=text]{width:30%;
+         padding:12px 20px;                                                  border:2px solid red;
+         box-sizing:border-box;                                              border-radius:40px;
+         border:none;                                                     or top or right or left.
+         border-bottom:2px solid red;
+         background-color:blue;
+         color:white;
+         }
+         input[type=text]: focus {background-color:lightblue; border:3px solid green;}
+         </style>
+         </head>
+         <body>
+         <label for="fname"> First Name </label>
+         <input type="text| password" id="fname" name="fname" />
+         </body>
+         </html>
+         
+         
+CSS COUNTERS :
+Syntax:- <html>
+         <head>
+         <style>
+         body{counter-reset:section;}
+         p::before{
+         counter-increment:section;
+         content:"section" counter(section) ":";
+         }
+         </style>
+         </head>
+         <body>
+         <p> HTML tutorial </p>
+         <p> CSS tutorial </p>
+         <p> C++ tutorial </p>
+         <p> MySQL tutorial </p>
+         </body>
+         </html>
+
+
+ANIMATION PROPERTY :
+Syntax:- <html>
+         <head>
+         <style>
+         div{
+         width:100px;
+         height:100px;
+         background-color:blue;
+         position:relative;
+         animation:mymove 5s infinite;
+         }
+         @keyframes mymove
+         {
+         from{left:0px;}
+         to{left:200px;}
+         }
+         </style>
+         </head>
+         <body>
+         <div></div>
+         </body>
+         </html>
+         
+         
+ANIMATION DELAY :
+Syntax:- <html>
+         <head>
+         <style>
+         div{
+         width:100px;
+         height:100px;
+         background-color:blue;
+         position:relative;
+         -webkit-animation:mymove 5s infinite;
+         -webkit-animation-delay: 3s ;
+         animation:mymove 5s infinite;
+         animation-delay:3s;
+         }
+         @keyframes mymove
+         {
+         from{left:0px;}
+         to{left:200px;}
+         }
+         </style>
+         </head>
+         <body>
+         <div></div>
+         </body>
+         </html>
+     
+
+ANIMATION DIRECTION :
+Syntax:- <html>
+         <head>
+         <style>
+         div{
+         width:100px;
+         height:100px;
+         background-color:blue;
+         position:relative;
+         -webkit-animation:mymove 5s infinite;
+         -webkit-animation-direction: alternate ;
+         animation:mymove 5s infinite;
+         animation-direction:alternate;
+         }
+         @keyframes mymove
+         {
+         from{left:0px;}
+         to{left:200px;}
+         }
+         </style>
+         </head>
+         <body>
+         <div></div>
+         </body>
+         </html>
+     
 
